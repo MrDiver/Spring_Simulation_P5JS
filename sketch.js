@@ -345,10 +345,10 @@ function setup() {
   a2 = new MassPoint([windowWidth/2,windowHeight/2-50],15,"a2");
   a3 = new MassPoint([windowWidth/2,windowHeight/2],15,"a3");
   
-  s = new Spring(a1,a2,stiffness, 100);
-  s2 = new Spring(a2,a3,stiffness, 100);
   d1 = new Damper(a1,a2,dampening);
   d2 = new Damper(a2,a3,dampening);
+  s = new Spring(a1,a2,stiffness, 100);
+  s2 = new Spring(a2,a3,stiffness, 100);
   new GravityForce(a2);
   new GravityForce(a3);
   
